@@ -9,5 +9,11 @@ void main(){
     print("type is ${s.runtimeType}");
 
   }
-  else if (double.tr)
+  else if (double.tryParse(n)!=null){
+    double v = double.parse(n);
+    print("type is ${v.runtimeType}");
+  }
+  else{
+    print("This is invalid number");
+  }
 }
